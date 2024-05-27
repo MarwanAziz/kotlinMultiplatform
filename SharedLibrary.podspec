@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.license = 'Private'
   spec.summary = 'An example project'
   spec.static_framework = true
-  spec.vendored_frameworks = "SharedLibrary.framework
+  spec.vendored_frameworks = "SharedLibrary.framework"
   spec.libraries = "c++"
   spec.module_name = "#{spec.name}_umbrella"
   spec.ios.deployment_target = '13.0'
