@@ -1,20 +1,14 @@
 Pod::Spec.new do |spec|
-  spec.name = "SharedLibrary"
-  spec.version = "1.0.0"
-  spec.summary = "First version of this library"
-  spec.homepage = "https://github.com/MarwanAziz/kotlinMultiplatform" # Replace with your repo URL
-  spec.license = "MIT" # Change if needed
-
-  # Point to your Git repository for source
-  spec.source = { :git => "https://github.com/MarwanAziz/kotlinMultiplatform.git", :tag => spec.version.to_s }
-
-  spec.ios.deployment_target = "10.0" # Update minimum deployment target if needed
-
-  spec.framework = "shared"
+  spec.name = 'SharedLibrary'
+  spec.version = '1.0.0'
+  spec.homepage = 'https://www.cocoapods.org'
+  spec.source = { :git => "https://github.com/MarwanAziz/kotlinMultiplatform.git", :tag => "1.0.0" }
+  spec.authors = 'Marwan Aziz'
+  spec.license = 'Private'
+  spec.summary = 'An example project'
   spec.static_framework = true
-
-  spec.requires_arc = true
-
-  # Define the path to the Kotlin/Native framework
-#   spec.vendored_frameworks = "build/bin/ios/releaseFramework/shared.framework"
+  spec.vendored_frameworks = "SharedLibrary.framework
+  spec.libraries = "c++"
+  spec.module_name = "#{spec.name}_umbrella"
+  spec.ios.deployment_target = '13.0'
 end
