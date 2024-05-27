@@ -1,7 +1,7 @@
 spec.name = "SharedLibrary"
 spec.version = "1.0.0" # Update version for each release
 spec.summary = "First version of this library"
-spec.homepage = "https://github.com/<your_github_username>/<library_name>" # Replace with your repo URL (optional)
+spec.homepage = "https://github.com/MarwanAziz/kotlinMultiplatform" # Replace with your repo URL (optional)
 spec.license = "MIT" # Change if needed
 
 # (Optional) Point to your Git repository for source (if using a remote repository)
