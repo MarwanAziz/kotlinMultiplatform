@@ -5,7 +5,7 @@ spec.homepage = "https://github.com/MarwanAziz/kotlinMultiplatform" # Replace wi
 spec.license = "MIT" # Change if needed
 
 # (Optional) Point to your Git repository for source (if using a remote repository)
-# spec.source = { :git => "https://github.com/<your_github_username>/<library_name>.git", :tag => spec.version.to_s }
+spec.source = { :git => "https://github.com/MarwanAziz/kotlinMultiplatform.git", :tag => spec.version.to_s }
 
 spec.ios.deployment_target = "10.0" # Update minimum deployment target if needed
 
