@@ -64,7 +64,8 @@ function main() {
     # git tag -a "$REPO_VERSION" -m "Release $REPO_VERSION" || { echo -e "${RED}Failed to create tag${NOCOLOR}"; exit 1; }
 
     echo "-- Push to repository --"
-    git push --set-upstream origin universal_library --tags || { echo -e "${RED}Failed to push to repository${NOCOLOR}"; exit 1; }
+    git push --force --set-upstream origin universal_library --tags || { echo -e "${RED}Failed to push to repository${NOCOLOR}"; exit 1; }
+
 }
 
 main
