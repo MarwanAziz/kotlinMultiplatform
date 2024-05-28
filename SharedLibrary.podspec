@@ -10,5 +10,5 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = "SharedLibrary.framework"
   spec.libraries = "c++"
   spec.module_name = "#{spec.name}_umbrella"
-  spec.ios.deployment_target = '13.0'
+  spec.ios.deployment_target = '16.0'
 end
