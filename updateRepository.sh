@@ -39,6 +39,13 @@ function main() {
 
     echo "-- Copy framework and podspec --"
     cd "$DIR/.." || exit
+
+    # Ensure the framework has been built
+    if [ ! -d "shared/build/bin/universal/release/SharedLibrary.framework" ]; then
+        echo -e "${RED}The framework does not exist. Please build the project first.${NOCOLOR}"
+        exit 1
+    fi
+
     cp -R shared/build/bin/universal/release/SharedLibrary.framework "$TMPDIR" || { echo -e "${RED}Failed to copy framework${NOCOLOR}"; exit 1; }
     cp *.podspec "$TMPDIR" || { echo -e "${RED}Failed to copy podspec${NOCOLOR}"; exit 1; }
 
