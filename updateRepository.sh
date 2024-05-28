@@ -38,7 +38,7 @@ function main() {
 
     echo "-- Copy framework and podspec --"
     cd "$DIR/.." || exit
-    cp -R shared/build/bin/universal/release/*.framework "$TMPDIR" || { echo -e "${RED}Failed to copy framework${NOCOLOR}"; exit 1; }
+    cp -R /shared/build/bin/universal/release/*.framework "$TMPDIR" || { echo -e "${RED}Failed to copy framework${NOCOLOR}"; exit 1; }
     cp *.podspec "$TMPDIR" || { echo -e "${RED}Failed to copy podspec${NOCOLOR}"; exit 1; }
 
     cd "$TMPDIR" || exit
